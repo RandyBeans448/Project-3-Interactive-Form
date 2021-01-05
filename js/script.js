@@ -207,7 +207,7 @@ const emailValidator = () => {
 let inputCard = document.getElementById("cc-num");
 const cardValidator = () => {
   const cardValue = inputCard.value;
-  let cardRegex = /^[0-9]{11,16}$/;
+  let cardRegex = /^[0-9]{13,16}$/;
   if (cardRegex.test(cardValue)) {
     inputCard.style.border = "2px solid #00FA9A";
     return true;
